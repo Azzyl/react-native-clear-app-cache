@@ -36,7 +36,7 @@ public class ClearCacheModule extends ReactContextBaseJavaModule {
         long fileSize = 0;
         // File filesDir = getReactApplicationContext().getFilesDir();// /data/data/package_name/files
         File cacheDir = getReactApplicationContext().getCacheDir();// /data/data/package_name/cache
-        fileSize += getDirSize(filesDir);
+        // fileSize += getDirSize(filesDir);
         fileSize += getDirSize(cacheDir);
         // 2.2版本才有将应用缓存转移到sd卡的功能
         if (isMethodsCompat(android.os.Build.VERSION_CODES.FROYO)) {
